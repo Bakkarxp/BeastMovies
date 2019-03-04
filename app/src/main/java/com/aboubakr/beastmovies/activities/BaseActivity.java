@@ -19,6 +19,7 @@ public class BaseActivity extends AppCompatActivity {
         appliction = (BeastMoviesApplication) getApplication();
         bus = appliction.getBus();
         // register bus
+        //In order to receive events, a class instance needs to register with the bus.
         bus.register(this);
     }
 
